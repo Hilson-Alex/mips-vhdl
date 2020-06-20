@@ -1,0 +1,18 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity reg is
+  port(i_ent    : in  std_logic_vector(31 downto 0);
+       i_CLK    : in  std_logic;
+       o_saida  : out std_logic_vector(31 downto 0));
+end reg;
+
+architecture arch_1 of reg is
+  begin
+  process(i_CLK)
+  begin
+    if(rising_edge(i_CLK)) then
+      o_saida <= i_ent;
+    end if;
+  end process;
+end architecture;

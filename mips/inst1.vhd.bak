@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity inst1 is
+  port(
+    addr : in std_logic_vector(31 downto 0) := (others => '0');
+    ins  : out std_logic_vector(31 downto 0) := (others => '0'));
+end inst1;
+
+architecture arch_1 of inst1 is
+begin
+  ins <= "00100000000100000000000000000000" when to_integer(unsigned(addr)) = 0 else
+         "00100000000100010000000000000001" when to_integer(unsigned(addr)) = 4 else
+         "00100000000100100000000000000010" when to_integer(unsigned(addr)) = 8 else
+         "00100000000100110000000000000011" when to_integer(unsigned(addr)) = 12 else
+         "00100000000101000000000000000100" when to_integer(unsigned(addr)) = 16 else
+         "00010010011101000000000000011100" when to_integer(unsigned(addr)) = 20 else
+         "00000010001100101000000000100000" when to_integer(unsigned(addr)) = 24 else
+         "00000010000100101000000000100010" when to_integer(unsigned(addr)) = 28 else (others => '0');
+end arch_1;

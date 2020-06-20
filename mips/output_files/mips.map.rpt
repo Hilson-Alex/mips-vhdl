@@ -1,0 +1,367 @@
+Analysis & Synthesis report for mips
+Wed Jun 17 19:38:14 2020
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Port Connectivity Checks: "somador:u_12"
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                          ;
++-------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status         ; Successful - Wed Jun 17 19:38:14 2020           ;
+; Quartus II 64-Bit Version           ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                       ; mips                                            ;
+; Top-level Entity Name               ; mips                                            ;
+; Family                              ; Cyclone V                                       ;
+; Logic utilization (in ALMs)         ; N/A                                             ;
+; Total registers                     ; 0                                               ;
+; Total pins                          ; 1                                               ;
+; Total virtual pins                  ; 0                                               ;
+; Total block memory bits             ; 0                                               ;
+; Total DSP Blocks                    ; 0                                               ;
+; Total HSSI RX PCSs                  ; 0                                               ;
+; Total HSSI PMA RX Deserializers     ; 0                                               ;
+; Total HSSI PMA RX ATT Deserializers ; 0                                               ;
+; Total HSSI TX PCSs                  ; 0                                               ;
+; Total HSSI PMA TX Serializers       ; 0                                               ;
+; Total HSSI PMA TX ATT Serializers   ; 0                                               ;
+; Total PLLs                          ; 0                                               ;
+; Total DLLs                          ; 0                                               ;
++-------------------------------------+-------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; mips               ; mips               ;
+; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; PowerPlay Power Optimization                                                    ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
+; Automatic Parallel Synthesis                                                    ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                             ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                      ; Library ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
+; leftShift_26bit.vhd              ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/leftShift_26bit.vhd ;         ;
+; ual_ctrl.vhd                     ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/ual_ctrl.vhd        ;         ;
+; ual.vhd                          ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/ual.vhd             ;         ;
+; subtrator.vhd                    ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/subtrator.vhd       ;         ;
+; somador.vhd                      ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/somador.vhd         ;         ;
+; seletor_5bit.vhd                 ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/seletor_5bit.vhd    ;         ;
+; reg_bank.vhd                     ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/reg_bank.vhd        ;         ;
+; reg.vhd                          ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/reg.vhd             ;         ;
+; or_32b.vhd                       ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/or_32b.vhd          ;         ;
+; mux2_1_32Bits.vhd                ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/mux2_1_32Bits.vhd   ;         ;
+; mips.vhd                         ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/mips.vhd            ;         ;
+; lessThan.vhd                     ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/lessThan.vhd        ;         ;
+; leftShift.vhd                    ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/leftShift.vhd       ;         ;
+; inst1.vhd                        ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/inst1.vhd           ;         ;
+; extensor.vhd                     ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/extensor.vhd        ;         ;
+; data_mem.vhd                     ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/data_mem.vhd        ;         ;
+; controller.vhd                   ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/controller.vhd      ;         ;
+; concatenador.vhd                 ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/concatenador.vhd    ;         ;
+; and_32b.vhd                      ; yes             ; User VHDL File  ; D:/arch_org_de_comp/VHDL/mips/and_32b.vhd         ;         ;
++----------------------------------+-----------------+-----------------+---------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Estimate of Logic utilization (ALMs needed) ; 0     ;
+;                                             ;       ;
+; Combinational ALUT usage for logic          ; 0     ;
+;     -- 7 input functions                    ; 0     ;
+;     -- 6 input functions                    ; 0     ;
+;     -- 5 input functions                    ; 0     ;
+;     -- 4 input functions                    ; 0     ;
+;     -- <=3 input functions                  ; 0     ;
+;                                             ;       ;
+; Dedicated logic registers                   ; 0     ;
+;                                             ;       ;
+; I/O pins                                    ; 1     ;
+; Total DSP Blocks                            ; 0     ;
+; Maximum fan-out node                        ; w_CLK ;
+; Maximum fan-out                             ; 1     ;
+; Total fan-out                               ; 1     ;
+; Average fan-out                             ; 0.50  ;
++---------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                       ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+; |mips                      ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 1    ; 0            ; |mips               ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "somador:u_12"     ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; i_b[31..3] ; Input ; Info     ; Stuck at GND ;
+; i_b[1..0]  ; Input ; Info     ; Stuck at GND ;
+; i_b[2]     ; Input ; Info     ; Stuck at VCC ;
++------------+-------+----------+--------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Jun 17 19:38:10 2020
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mips -c mips
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file leftshift_26bit.vhd
+    Info (12022): Found design unit 1: leftShift_26bit-arch_1
+    Info (12023): Found entity 1: leftShift_26bit
+Info (12021): Found 2 design units, including 1 entities, in source file ual_ctrl.vhd
+    Info (12022): Found design unit 1: ual_ctrl-arch_1
+    Info (12023): Found entity 1: ual_ctrl
+Info (12021): Found 2 design units, including 1 entities, in source file ual.vhd
+    Info (12022): Found design unit 1: ual-arch_1
+    Info (12023): Found entity 1: ual
+Info (12021): Found 2 design units, including 1 entities, in source file subtrator.vhd
+    Info (12022): Found design unit 1: subtrator-arch_1
+    Info (12023): Found entity 1: subtrator
+Info (12021): Found 2 design units, including 1 entities, in source file somador.vhd
+    Info (12022): Found design unit 1: somador-soma
+    Info (12023): Found entity 1: somador
+Info (12021): Found 2 design units, including 1 entities, in source file seletor_5bit.vhd
+    Info (12022): Found design unit 1: seletor_5bit-arch_1
+    Info (12023): Found entity 1: seletor_5bit
+Warning (12019): Can't analyze file -- file seletor.vhd is missing
+Info (12021): Found 0 design units, including 0 entities, in source file reg_tb.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file reg_bank.vhd
+    Info (12022): Found design unit 1: reg_bank-arch_1
+    Info (12023): Found entity 1: reg_bank
+Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
+    Info (12022): Found design unit 1: reg-arch_1
+    Info (12023): Found entity 1: reg
+Info (12021): Found 2 design units, including 1 entities, in source file or_32b.vhd
+    Info (12022): Found design unit 1: or_32b-arch_1
+    Info (12023): Found entity 1: or_32b
+Info (12021): Found 2 design units, including 1 entities, in source file mux2_1_32bits.vhd
+    Info (12022): Found design unit 1: mux2_1_32Bits-seletor
+    Info (12023): Found entity 1: mux2_1_32Bits
+Info (12021): Found 2 design units, including 1 entities, in source file mips.vhd
+    Info (12022): Found design unit 1: mips-arch_1
+    Info (12023): Found entity 1: mips
+Info (12021): Found 2 design units, including 1 entities, in source file lessthan.vhd
+    Info (12022): Found design unit 1: lessThan-arch_1
+    Info (12023): Found entity 1: lessThan
+Info (12021): Found 2 design units, including 1 entities, in source file leftshift.vhd
+    Info (12022): Found design unit 1: leftShift-arch_1
+    Info (12023): Found entity 1: leftShift
+Info (12021): Found 2 design units, including 1 entities, in source file inst2.vhd
+    Info (12022): Found design unit 1: inst2-arch_1
+    Info (12023): Found entity 1: inst2
+Info (12021): Found 2 design units, including 1 entities, in source file inst1.vhd
+    Info (12022): Found design unit 1: inst1-arch_1
+    Info (12023): Found entity 1: inst1
+Info (12021): Found 2 design units, including 1 entities, in source file extensor.vhd
+    Info (12022): Found design unit 1: extensor-arch_1
+    Info (12023): Found entity 1: extensor
+Info (12021): Found 2 design units, including 1 entities, in source file data_mem.vhd
+    Info (12022): Found design unit 1: data_mem-arch_1
+    Info (12023): Found entity 1: data_mem
+Info (12021): Found 2 design units, including 1 entities, in source file controller.vhd
+    Info (12022): Found design unit 1: controller-arch_1
+    Info (12023): Found entity 1: controller
+Info (12021): Found 2 design units, including 1 entities, in source file concatenador.vhd
+    Info (12022): Found design unit 1: concatenador-arch_1
+    Info (12023): Found entity 1: concatenador
+Info (12021): Found 2 design units, including 1 entities, in source file and_32b.vhd
+    Info (12022): Found design unit 1: and_32b-arch_1
+    Info (12023): Found entity 1: and_32b
+Info (12127): Elaborating entity "mips" for the top level hierarchy
+Warning (10540): VHDL Signal Declaration warning at mips.vhd(138): used explicit default value for signal "w_AND_s" because signal was never assigned a value
+Warning (10540): VHDL Signal Declaration warning at mips.vhd(142): used explicit default value for signal "w_soma4" because signal was never assigned a value
+Info (12128): Elaborating entity "reg" for hierarchy "reg:u_0"
+Info (12128): Elaborating entity "inst1" for hierarchy "inst1:u_1"
+Info (12128): Elaborating entity "controller" for hierarchy "controller:u_2"
+Info (12128): Elaborating entity "seletor_5bit" for hierarchy "seletor_5bit:u_3"
+Info (12128): Elaborating entity "reg_bank" for hierarchy "reg_bank:u_4"
+Info (12128): Elaborating entity "extensor" for hierarchy "extensor:u_5"
+Info (12128): Elaborating entity "mux2_1_32Bits" for hierarchy "mux2_1_32Bits:u_6"
+Info (12128): Elaborating entity "ual_ctrl" for hierarchy "ual_ctrl:u_7"
+Info (12128): Elaborating entity "ual" for hierarchy "ual:u_8"
+Info (12128): Elaborating entity "somador" for hierarchy "ual:u_8|somador:u_0"
+Info (12128): Elaborating entity "subtrator" for hierarchy "ual:u_8|subtrator:u_1"
+Info (12128): Elaborating entity "and_32b" for hierarchy "ual:u_8|and_32b:u_2"
+Info (12128): Elaborating entity "or_32b" for hierarchy "ual:u_8|or_32b:u_3"
+Info (12128): Elaborating entity "lessThan" for hierarchy "ual:u_8|lessThan:u_4"
+Info (12128): Elaborating entity "data_mem" for hierarchy "data_mem:u_9"
+Info (12128): Elaborating entity "leftShift" for hierarchy "leftShift:u_11"
+Info (12128): Elaborating entity "leftShift_26bit" for hierarchy "leftShift_26bit:u_14"
+Info (12128): Elaborating entity "concatenador" for hierarchy "concatenador:u_15"
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "w_CLK"
+Info (21057): Implemented 1 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 0 output pins
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 4700 megabytes
+    Info: Processing ended: Wed Jun 17 19:38:15 2020
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:02
+
+

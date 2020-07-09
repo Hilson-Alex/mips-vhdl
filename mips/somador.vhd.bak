@@ -13,7 +13,7 @@ ARCHITECTURE soma OF somador IS
   signal w_a, w_b, w_c : INTEGER;
   BEGIN
     w_a <= to_integer(unsigned(i_a));
-    w_b <= to_integer(signed(i_b));
+    w_b <= to_integer(unsigned(i_b));
     w_c <= w_a + w_b;
     o_c <= std_logic_vector(to_unsigned(w_c, o_c'length));
 

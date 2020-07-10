@@ -1,0 +1,3 @@
+mips/
+!*.vhd
+!mips.qpf

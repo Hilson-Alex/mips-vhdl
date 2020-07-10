@@ -4,13 +4,35 @@ A monocycle mips hardware description in VHDL. We use 32 registers (5 bits index
   
 ## Instructions
 
-Our mips read a .vhd circuit as an instructions (See [Ins1](/mips/inst1.vhd) and [Ins2](/mips/inst2.vhd)).
+Our mips read a .vhd circuit as an instructions (See [Ins1](/mips/inst1.vhd), [Ins2](/mips/inst2.vhd), See [Ins3](/mips/inst3.vhd) and See [Ins4](/mips/inst4.vhd)).
 
-Note that our start instruction is 0x00400000, so this may be handled in your Instruction.
+Note that our start instruction is 0x00400000, so this may be handled in your Instruction. Soon we hope to separate the instructions from the processor, and let an easy way to make the MIPS read the instructions.
   
 ## Deployment Observations
 
-This Mips is not completely implemented. *save word* (sw) and *load word* (lw) aren't currently implemented, our memory is a placeholder, as are our outputs for reading and writing it.
+This Mips is not completely implemented. *save word* (sw) and *load word* (lw) are working, but lui and ori aren't implemented yet, so you need an predefined index to use sw and lw.
+
+### Currently implemented instructions:
+
+- **R Instructions**
+
+  - *add*
+  - *sub*
+  - *and*
+  - *or*
+  - *slt (set on less than)*
+  - *jr (jump register)*
+  
+- **I Instructions**
+  
+  - *addi (sdd imemdiate)*
+  - *sw (store word)*
+  - *lw (load word)*
+  - *beq (branch on equal)*
+  
+- **J Instructions**
+  - *j (jump)*
+  - *jal (jump and link)*
   
 ## Authors
 

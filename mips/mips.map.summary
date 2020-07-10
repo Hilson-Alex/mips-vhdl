@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Fri Jun 19 18:39:23 2020
+Analysis & Synthesis Status : Successful - Thu Jul 09 17:25:45 2020
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : mips
-Top-level Entity Name : leftShift
+Top-level Entity Name : clock_converter
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 64
+Total registers : 33
+Total pins : 2
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

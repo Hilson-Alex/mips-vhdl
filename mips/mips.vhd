@@ -5,13 +5,14 @@ entity mips is
 end mips;
 
 architecture arch_1 of mips is
+
   component reg is
     port(i_ent    : in  std_logic_vector(31 downto 0);
          i_CLK_n  : in  std_logic;
          o_saida  : out std_logic_vector(31 downto 0));
   end component;
 
-  component inst2 is
+  component inst1 is
     port(addr : in std_logic_vector(31 downto 0);
          ins  : out std_logic_vector(31 downto 0));
   end component;
@@ -102,61 +103,89 @@ architecture arch_1 of mips is
     port(i_ent   : in std_logic_vector(25 downto 0);
          o_saida : out std_logic_vector(27 downto 0) := (others => '0'));
   end component;
+  
+  -- Fios PC
 
-  signal w_PC_ent   : std_logic_vector(31 downto 0) := (others => '0');
-  signal w_CLK		  : std_logic := '0';
-  signal w_PC_saida : std_logic_vector(31 downto 0):= (others => '0');
+  signal w_PC_ent   : std_logic_vector(31 downto 0) := (others => '0'); -- entrada PC
+  signal w_CLK 	  : std_logic := '0';		 									-- clock
+  signal w_PC_saida : std_logic_vector(31 downto 0):= (others => '0');	-- saída pc
+  
+  -- Fios Instrução
 
-  signal w_inst : std_logic_vector(31 downto 0);
+  signal w_inst : std_logic_vector(31 downto 0);								-- saída instrução
+  
+  -- Fios Controller
 
-  signal w_RegDest     : std_logic;
-  signal w_Dvi         : std_logic;
-  signal w_DvC         : std_logic;
-  signal w_LerMem      : std_logic;
-  signal w_MemParaReg  : std_logic;
-  signal w_UALOp       : std_logic_vector(1 downto 0);
-  signal w_EseMem      : std_logic;
-  signal w_UALFont     : std_logic;
-  signal w_EscReg      : std_logic;
+  signal w_RegDest     : std_logic;													-- registrador de destino
+  signal w_Dvi         : std_logic;													-- desvio incondicional
+  signal w_DvC         : std_logic;													-- desvio condicional
+  signal w_LerMem      : std_logic;													-- ler memória
+  signal w_MemParaReg  : std_logic;													-- memória para registrador
+  signal w_UALOp       : std_logic_vector(1 downto 0);						-- Operação da ULA
+  signal w_EseMem      : std_logic;													-- Escreve memória
+  signal w_UALFont     : std_logic;													-- Fonte da ULA
+  signal w_EscReg      : std_logic;													-- Escreve em registrador
+  
+  -- fio mux Banco de Registradores
 
-  signal w_RB_addr : std_logic_vector(4 downto 0);
+  signal w_RB_addr : std_logic_vector(4 downto 0);								-- Endereço de escrita
+  
+  -- fios banco de registradores
 
-  signal w_Din    : std_logic_vector(31 downto 0);
-  signal w_Dout_1 : std_logic_vector(31 downto 0);
-  signal w_Dout_2 : std_logic_vector(31 downto 0);
+  signal w_Din    : std_logic_vector(31 downto 0);								-- valor a ser salvo
+  signal w_Dout_1 : std_logic_vector(31 downto 0);								-- saída 1
+  signal w_Dout_2 : std_logic_vector(31 downto 0);								-- saída 2
 
-  signal w_INST_32b : std_logic_vector(31 downto 0);
-  signal w_B        : std_logic_vector(31 downto 0);
+  -- fios mux Imediato
+  
+  signal w_INST_32b : std_logic_vector(31 downto 0);							-- imediato (extendido)
+  signal w_B        : std_logic_vector(31 downto 0);							-- saída
 
-  signal w_ual_cd : std_logic_vector(2 downto 0);
+  -- fio controle da ULA
+  
+  signal w_ual_cd : std_logic_vector(2 downto 0);								-- comando da ULA
 
-  signal w_z : std_logic := '0';
-  signal w_s : std_logic_vector(31 downto 0);
+  -- fios ULA
+  
+  signal w_z : std_logic := '0';														-- zero flag
+  signal w_s : std_logic_vector(31 downto 0);									-- saída
+  
+  -- fio RAM
 
-  signal w_MEM_Dout : std_logic_vector(31 downto 0);
+  signal w_MEM_Dout : std_logic_vector(31 downto 0);							-- saída RAM
 
-  signal w_AND_s : std_logic := w_z and w_DvC;
+  -- beq
+  
+  signal w_AND_s : std_logic := w_z and w_DvC;									-- seletor beq
 
-  signal w_INST_ls : std_logic_vector(31 downto 0);
+  signal w_INST_ls : std_logic_vector(31 downto 0);							-- endereço relativo beq
+  
+  -- fio somador PC
 
-  signal w_soma4 : std_logic_vector(31 downto 0) := (2 => '1', others => '0');
+  signal w_soma4 : std_logic_vector(31 downto 0) := (2 => '1', others => '0'); -- constante 4
 
-  signal w_PC : std_logic_vector(31 downto 0);
+  signal w_PC : std_logic_vector(31 downto 0); 									-- próxima instrução
+  
+  -- fios jump 
 
-  signal w_INST_e : std_logic_vector(27 downto 0):= (others => '0');
+  signal w_INST_e : std_logic_vector(27 downto 0):= (others => '0');		-- imediato * 4
 
-  signal w_CONC_pc : std_logic_vector(31 downto 0);
+  signal w_CONC_pc : std_logic_vector(31 downto 0); 							-- saída concatenador
+  
+  -- mux beq
 
-  signal w_INST_PC : std_logic_vector(31 downto 0);
+  signal w_INST_PC : std_logic_vector(31 downto 0);							-- endereço absoluto beq
 
-  signal w_beq : std_logic_vector(31 downto 0);
+  signal w_beq : std_logic_vector(31 downto 0);									-- saída mux beq
+  
   begin
-    u_0 : reg
+  
+   u_0 : reg
       port map(i_ent   => w_PC_ent,
                i_CLK_n => w_CLK,
                o_saida => w_PC_saida);
 
-    u_1 : inst2
+    u_1 : inst1
       port map(addr => w_PC_saida,
                ins  => w_inst);
 
@@ -211,7 +240,7 @@ architecture arch_1 of mips is
                o_s  => w_S);
 
     u_9 : data_mem
-      port map(i_clk  => w_CLK,
+      port map(i_clk  => w_CLK1,
                i_save => w_EseMem,
                i_read => w_LerMem,
                i_addr => w_S,

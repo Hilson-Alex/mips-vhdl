@@ -12,7 +12,7 @@ entity data_mem is
 end data_mem;
 
 architecture arch_1 of data_mem is
-  type t_mem is array (0 to (2**8)-1) of std_logic_vector(31 downto 0); -- Memória endereçada em 8 bits e não 32
+  type t_mem is array (0 to (2**8)-1) of std_logic_vector(31 downto 0); -- Memória endereçada em 8 bits e nao 32 bits
   signal w_regs : t_mem := (others => (others => '0'));
   begin
 
@@ -20,11 +20,12 @@ architecture arch_1 of data_mem is
   begin
       if (rising_edge(i_clk)) then
           if (i_save = '1') then
-              w_regs(to_integer(unsigned(i_addr(7 downto 0)))) <= i_din;
-          end if;
-          if (i_read = '1') then
-              o_dout <= w_regs(to_integer(unsigned(i_addr(7 downto 0))));
+              w_regs(to_integer(unsigned(i_addr(31 downto 25)))) <= i_din;
           end if;
       end if;
-  end process;
+	end process;
+		
+   o_dout <= w_regs(to_integer(unsigned(i_addr(31 downto 25)))) when i_read = '1' else
+				 (others => '0');
+      
 end arch_1;

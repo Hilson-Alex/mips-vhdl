@@ -71,7 +71,7 @@ begin
              o_s => w_less);
 
   o_s <= w_soma when i_op = "010" else w_subt when i_op = "110" else w_and when i_op = "000"
-else w_or when i_op = "001" else w_less;
+			else w_or when i_op = "001" else w_less when i_op = "111" else (others => '0') ;
 
   o_z <= '1' when to_integer(unsigned(w_subt)) = 0 and i_op = "110" else '0';
 end architecture;

@@ -11,7 +11,7 @@ architecture arch_1 of reg is
   begin
   process(i_CLK_n)
   begin
-    if(falling_edge(i_CLK_n)) then
+    if(rising_edge(i_CLK_n)) then
       o_saida <= i_ent;
     end if;
   end process;

@@ -1,3 +1,5 @@
 mips/*
 !*.vhd
 !mips.qpf
+!mips/db
+!mips/work

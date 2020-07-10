@@ -23,6 +23,6 @@ architecture arch_1 of controller is
     o_MemParaReg <= "01" when i_ent = "100011" else "10" when i_ent = "000011" else "00";
     o_UALOp      <= "01" when i_ent = "000100" else "10" when i_ent = "000000" else "00";
     o_EseMem     <= '1' when i_ent = "101011" else '0';
-    o_UALFont    <= '1' when i_ent = "001000" else '0';
-    o_EscReg     <= '1' when i_ent = "000000" or i_ent = "001000" or i_ent="000011" else '0';
+    o_UALFont    <= '1' when i_ent = "001000" or i_ent = "100011" or i_ent = "101011" else '0';
+    o_EscReg     <= '1' when i_ent = "000000" or i_ent = "001000" or i_ent="000011" or i_ent = "100011" else '0';
 end arch_1;

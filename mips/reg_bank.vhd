@@ -15,7 +15,9 @@ end reg_bank;
 
 architecture arch_1 of reg_bank is
   type t_mem is array (0 to 31) of std_logic_vector(31 downto 0);
-  signal w_regs : t_mem := (others => (others => '0'));
+  signal w_regs : t_mem := (29 => to_stdlogicvector(x"7fffeffc"), -- stack pointer
+									 8  => to_stdlogicvector(x"10010000"), -- 
+									 others => (others => '0'));
   begin
 	
 	o_dout1 <= w_regs(to_integer(unsigned(i_end1)));

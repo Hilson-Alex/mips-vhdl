@@ -17,7 +17,7 @@ architecture arch_1 of mips is
 				o_saida  : out std_logic_vector(31 downto 0));
 	end component;
 
-	component inst3 is
+	component inst4 is
 		port(	addr : in std_logic_vector(31 downto 0);
 				ins  : out std_logic_vector(31 downto 0));
 	end component;
@@ -211,7 +211,7 @@ begin
                i_CLK_n => w_CLK,
                o_saida => w_PC_saida);
 
-	u_inst : inst3
+	u_inst : inst4
 		port map(addr => w_PC_saida,
                ins  => w_inst);
 

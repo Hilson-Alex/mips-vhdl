@@ -37,5 +37,5 @@ This Mips is not completely implemented. *save word* (sw) and *load word* (lw) a
 ## Authors
 
 * Gabriel Assunção de Souza: [@Souza-gabriel](https://github.com/Souza-gabriel)
-* Hilson A. W. Jr.: [@Wojcikiewicz](https://github.com/Wojcikiewicz)
+* Hilson A. W. Jr.: [@Hilson-Alex](https://github.com/Hilson-Alex)
 * Matheus Heck: [@MatheusHeck2001](https://github.com/MatheusHeck2001)

@@ -39,3 +39,7 @@ This Mips is not completely implemented. *save word* (sw) and *load word* (lw) a
 * Gabriel Assunção de Souza: [@Souza-gabriel](https://github.com/Souza-gabriel)
 * Hilson A. W. Jr.: [@Hilson-Alex](https://github.com/Hilson-Alex)
 * Matheus Heck: [@MatheusHeck2001](https://github.com/MatheusHeck2001)
+
+---
+## License
+This project is licensed under the MIT License - see the [LICENSE.md](/LICENSE) file for details

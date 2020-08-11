@@ -8,20 +8,20 @@ Eand_32b
 Z0 w1592541642
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z3 dC:/Users/hilso/Downloads/mips/mips
-Z4 8and_32b.vhd
-Z5 Fand_32b.vhd
+Z3 dC:/Users/hilso/Downloads/2020.1/mips/mips
+Z4 8./mips_logic/and_32b.vhd
+Z5 F./mips_logic/and_32b.vhd
 l0
 L4
 VDOPJ2GJG4;B_QKOlZ=UBW1
 !s100 iX916[[oWdPT>1YX]RV0X0
 Z6 OV;C;10.5b;63
 32
-Z7 !s110 1594411294
+Z7 !s110 1597165475
 !i10b 1
-Z8 !s108 1594411294.000000
-Z9 !s90 -reportprogress|300|and_32b.vhd|clock_converter.vhd|concatenador.vhd|controller.vhd|data_mem.vhd|extensor.vhd|inst1.vhd|inst2.vhd|inst3.vhd|inst4.vhd|leftShift.vhd|leftShift_26bit.vhd|lessThan.vhd|mips.vhd|mux2_1_32Bits.vhd|or_32b.vhd|reg.vhd|reg_bank.vhd|seletor3_1_5bit.vhd|seletor_5bit.vhd|seletro3_1_32bits.vhd|somador.vhd|somador_signed.vhd|subtrator.vhd|ual.vhd|ual_ctrl.vhd|
-Z10 !s107 ual_ctrl.vhd|ual.vhd|subtrator.vhd|somador_signed.vhd|somador.vhd|seletro3_1_32bits.vhd|seletor_5bit.vhd|seletor3_1_5bit.vhd|reg_bank.vhd|reg.vhd|or_32b.vhd|mux2_1_32Bits.vhd|mips.vhd|lessThan.vhd|leftShift_26bit.vhd|leftShift.vhd|inst4.vhd|inst3.vhd|inst2.vhd|inst1.vhd|extensor.vhd|data_mem.vhd|controller.vhd|concatenador.vhd|clock_converter.vhd|and_32b.vhd|
+Z8 !s108 1597165474.000000
+Z9 !s90 -reportprogress|300|mips_tb.vhd|./mips_instructions/inst1.vhd|./mips_instructions/inst2.vhd|./mips_instructions/inst3.vhd|./mips_instructions/inst4.vhd|./mips_logic/and_32b.vhd|./mips_logic/clock_converter.vhd|./mips_logic/concatenador.vhd|./mips_logic/controller.vhd|./mips_logic/data_mem.vhd|./mips_logic/extensor.vhd|./mips_logic/leftShift.vhd|./mips_logic/leftShift_26bit.vhd|./mips_logic/lessThan.vhd|./mips_logic/mips.vhd|./mips_logic/mux2_1_32Bits.vhd|./mips_logic/or_32b.vhd|./mips_logic/reg.vhd|./mips_logic/reg_bank.vhd|./mips_logic/seletor3_1_5bit.vhd|./mips_logic/seletor_5bit.vhd|./mips_logic/seletro3_1_32bits.vhd|./mips_logic/somador.vhd|./mips_logic/somador_signed.vhd|./mips_logic/subtrator.vhd|./mips_logic/ual.vhd|./mips_logic/ual_ctrl.vhd|
+Z10 !s107 ./mips_logic/ual_ctrl.vhd|./mips_logic/ual.vhd|./mips_logic/subtrator.vhd|./mips_logic/somador_signed.vhd|./mips_logic/somador.vhd|./mips_logic/seletro3_1_32bits.vhd|./mips_logic/seletor_5bit.vhd|./mips_logic/seletor3_1_5bit.vhd|./mips_logic/reg_bank.vhd|./mips_logic/reg.vhd|./mips_logic/or_32b.vhd|./mips_logic/mux2_1_32Bits.vhd|./mips_logic/mips.vhd|./mips_logic/lessThan.vhd|./mips_logic/leftShift_26bit.vhd|./mips_logic/leftShift.vhd|./mips_logic/extensor.vhd|./mips_logic/data_mem.vhd|./mips_logic/controller.vhd|./mips_logic/concatenador.vhd|./mips_logic/clock_converter.vhd|./mips_logic/and_32b.vhd|./mips_instructions/inst4.vhd|./mips_instructions/inst3.vhd|./mips_instructions/inst2.vhd|./mips_instructions/inst1.vhd|mips_tb.vhd|
 !i113 1
 Z11 tExplicit 1 CvgOpt 0
 Aarch_1
@@ -47,8 +47,8 @@ Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R1
 R2
 R3
-Z17 8clock_converter.vhd
-Z18 Fclock_converter.vhd
+Z17 8./mips_logic/clock_converter.vhd
+Z18 F./mips_logic/clock_converter.vhd
 l0
 L6
 VA[2V7HMCWH@I3lefcECN63
@@ -85,8 +85,8 @@ Z22 w1592686239
 R1
 R2
 R3
-Z23 8concatenador.vhd
-Z24 Fconcatenador.vhd
+Z23 8./mips_logic/concatenador.vhd
+Z24 F./mips_logic/concatenador.vhd
 l0
 L4
 VhOM[2maoGBXjo4RMe_;mY3
@@ -122,8 +122,8 @@ Z28 w1594411278
 R1
 R2
 R3
-Z29 8controller.vhd
-Z30 Fcontroller.vhd
+Z29 8./mips_logic/controller.vhd
+Z30 F./mips_logic/controller.vhd
 l0
 L4
 V1;FgL4`7ec]Ggi6]VOac<2
@@ -143,8 +143,8 @@ R2
 Z31 DEx4 work 10 controller 0 22 1;FgL4`7ec]Ggi6]VOac<2
 l18
 L17
-V`W`HjeVlna920K;9Y@OTQ0
-!s100 n<VR:`XPBB]j9<n20FgUa0
+Z32 V`W`HjeVlna920K;9Y@OTQ0
+Z33 !s100 n<VR:`XPBB]j9<n20FgUa0
 R6
 32
 R7
@@ -155,13 +155,13 @@ R10
 !i113 1
 R11
 Edata_mem
-Z32 w1594410833
+Z34 w1594410833
 R16
 R1
 R2
 R3
-Z33 8data_mem.vhd
-Z34 Fdata_mem.vhd
+Z35 8./mips_logic/data_mem.vhd
+Z36 F./mips_logic/data_mem.vhd
 l0
 L5
 VZz`Pk<Adf=fEL56EK=3jN0
@@ -179,11 +179,11 @@ Aarch_1
 R16
 R1
 R2
-Z35 DEx4 work 8 data_mem 0 22 Zz`Pk<Adf=fEL56EK=3jN0
+Z37 DEx4 work 8 data_mem 0 22 Zz`Pk<Adf=fEL56EK=3jN0
 l17
 L14
-Z36 VWYQmFhC;RB1mNQfhM4g4W2
-Z37 !s100 kI9D8XFd41XYFmo^U=6Z`0
+Z38 VWYQmFhC;RB1mNQfhM4g4W2
+Z39 !s100 kI9D8XFd41XYFmo^U=6Z`0
 R6
 32
 R7
@@ -194,12 +194,12 @@ R10
 !i113 1
 R11
 Eextensor
-Z38 w1592541643
+Z40 w1592541643
 R1
 R2
 R3
-Z39 8extensor.vhd
-Z40 Fextensor.vhd
+Z41 8./mips_logic/extensor.vhd
+Z42 F./mips_logic/extensor.vhd
 l0
 L4
 VQRdPg5W2T^JFg8BkHM53m0
@@ -216,11 +216,11 @@ R11
 Aarch_1
 R1
 R2
-Z41 DEx4 work 8 extensor 0 22 QRdPg5W2T^JFg8BkHM53m0
+Z43 DEx4 work 8 extensor 0 22 QRdPg5W2T^JFg8BkHM53m0
 l10
 L9
-Z42 V3jg9z@_n`>4Tz]?S1fJ;?3
-Z43 !s100 F;Xm^WghHPeki=QBj@ZHB0
+Z44 V3jg9z@_n`>4Tz]?S1fJ;?3
+Z45 !s100 F;Xm^WghHPeki=QBj@ZHB0
 R6
 32
 R7
@@ -231,13 +231,13 @@ R10
 !i113 1
 R11
 Einst1
-Z44 w1594344810
+Z46 w1594344810
 R16
 R1
 R2
 R3
-Z45 8inst1.vhd
-Z46 Finst1.vhd
+Z47 8./mips_instructions/inst1.vhd
+Z48 F./mips_instructions/inst1.vhd
 l0
 L5
 V<J00HQPg^Bd`mJDJnR0m>3
@@ -255,11 +255,11 @@ Aarch_1
 R16
 R1
 R2
-Z47 DEx4 work 5 inst1 0 22 <J00HQPg^Bd`mJDJnR0m>3
+Z49 DEx4 work 5 inst1 0 22 <J00HQPg^Bd`mJDJnR0m>3
 l14
 L12
-Z48 VTLKn:ZAM<SkLQe54`hJOZ3
-Z49 !s100 6@Nzm6gTT@KoSM1YfE;QF1
+Z50 VTLKn:ZAM<SkLQe54`hJOZ3
+Z51 !s100 6@Nzm6gTT@KoSM1YfE;QF1
 R6
 32
 R7
@@ -270,13 +270,13 @@ R10
 !i113 1
 R11
 Einst2
-Z50 w1592688287
+Z52 w1592688287
 R16
 R1
 R2
 R3
-Z51 8inst2.vhd
-Z52 Finst2.vhd
+Z53 8./mips_instructions/inst2.vhd
+Z54 F./mips_instructions/inst2.vhd
 l0
 L5
 VC42ETZUQL<J0USLb@KR6z3
@@ -294,11 +294,11 @@ Aarch_1
 R16
 R1
 R2
-Z53 DEx4 work 5 inst2 0 22 C42ETZUQL<J0USLb@KR6z3
+Z55 DEx4 work 5 inst2 0 22 C42ETZUQL<J0USLb@KR6z3
 l13
 L11
-Z54 V86=bz7Ile1ED1oV;2jDH:0
-Z55 !s100 KjXQCMG^Vzm:TneFK6E]h0
+Z56 V86=bz7Ile1ED1oV;2jDH:0
+Z57 !s100 KjXQCMG^Vzm:TneFK6E]h0
 R6
 32
 R7
@@ -309,13 +309,13 @@ R10
 !i113 1
 R11
 Einst3
-Z56 w1594393444
+Z58 w1594393444
 R16
 R1
 R2
 R3
-Z57 8inst3.vhd
-Z58 Finst3.vhd
+Z59 8./mips_instructions/inst3.vhd
+Z60 F./mips_instructions/inst3.vhd
 l0
 L5
 Vhe4:fS@`fEIdCO>7`8ejm2
@@ -333,11 +333,11 @@ Aarch_1
 R16
 R1
 R2
-Z59 DEx4 work 5 inst3 0 22 he4:fS@`fEIdCO>7`8ejm2
+Z61 DEx4 work 5 inst3 0 22 he4:fS@`fEIdCO>7`8ejm2
 l14
 L12
-Z60 VR5TeMJcJ7gego[_7VhELT3
-Z61 !s100 ;YbOPdi7GBn4DnEzg94U:2
+Z62 VR5TeMJcJ7gego[_7VhELT3
+Z63 !s100 ;YbOPdi7GBn4DnEzg94U:2
 R6
 32
 R7
@@ -348,20 +348,20 @@ R10
 !i113 1
 R11
 Einst4
-Z62 w1594409079
+Z64 w1594409079
 R16
 R1
 R2
 R3
-Z63 8inst4.vhd
-Z64 Finst4.vhd
+Z65 8./mips_instructions/inst4.vhd
+Z66 F./mips_instructions/inst4.vhd
 l0
 L5
 VfcZAVE@bE`J?gY45OOASQ0
 !s100 [PhNMFQNC_Q00GfG;U:541
 R6
 32
-Z65 !s110 1594411295
+R7
 !i10b 1
 R8
 R9
@@ -372,14 +372,14 @@ Aarch_1
 R16
 R1
 R2
-Z66 DEx4 work 5 inst4 0 22 fcZAVE@bE`J?gY45OOASQ0
+Z67 DEx4 work 5 inst4 0 22 fcZAVE@bE`J?gY45OOASQ0
 l13
 L11
-Z67 VKVE:0aTAhF;hJf0C;8B6:1
-Z68 !s100 0T6VN8Ac2h:GJOhXG6HWe1
+Z68 VKVE:0aTAhF;hJf0C;8B6:1
+Z69 !s100 0T6VN8Ac2h:GJOhXG6HWe1
 R6
 32
-R65
+R7
 !i10b 1
 R8
 R9
@@ -387,20 +387,20 @@ R10
 !i113 1
 R11
 Eleftshift
-R38
+R40
 R16
 R1
 R2
 R3
-Z69 8leftShift.vhd
-Z70 FleftShift.vhd
+Z70 8./mips_logic/leftShift.vhd
+Z71 F./mips_logic/leftShift.vhd
 l0
 L4
 VCU@OdcWXbHE8U;MY@I6=F0
 !s100 2CHJHCQ;4;zU1=@aPLzlC1
 R6
 32
-R65
+R7
 !i10b 1
 R8
 R9
@@ -411,14 +411,14 @@ Aarch_1
 R16
 R1
 R2
-Z71 DEx4 work 9 leftshift 0 22 CU@OdcWXbHE8U;MY@I6=F0
+Z72 DEx4 work 9 leftshift 0 22 CU@OdcWXbHE8U;MY@I6=F0
 l10
 L9
-Z72 V_fF:;g`hUY[bnOdc?VJ?T3
-Z73 !s100 SjGk8kGhGH=4UGcQSCoW91
+Z73 V_fF:;g`hUY[bnOdc?VJ?T3
+Z74 !s100 SjGk8kGhGH=4UGcQSCoW91
 R6
 32
-R65
+R7
 !i10b 1
 R8
 R9
@@ -426,20 +426,20 @@ R10
 !i113 1
 R11
 Eleftshift_26bit
-Z74 w1592602979
+Z75 w1592602979
 R16
 R1
 R2
 R3
-Z75 8leftShift_26bit.vhd
-Z76 FleftShift_26bit.vhd
+Z76 8./mips_logic/leftShift_26bit.vhd
+Z77 F./mips_logic/leftShift_26bit.vhd
 l0
 L4
 Vz9c@9>F]16PHobSQA4FAO0
 !s100 ;Co_m9M>HLA4GIcClLXLl3
 R6
 32
-R65
+R7
 !i10b 1
 R8
 R9
@@ -450,14 +450,14 @@ Aarch_1
 R16
 R1
 R2
-Z77 DEx4 work 15 leftshift_26bit 0 22 z9c@9>F]16PHobSQA4FAO0
+Z78 DEx4 work 15 leftshift_26bit 0 22 z9c@9>F]16PHobSQA4FAO0
 l10
 L9
-Z78 Vi1W]_d<z2@5GAD6oc<LD>1
-Z79 !s100 V:BRmL27;OWP?K2n8W:lC2
+Z79 Vi1W]_d<z2@5GAD6oc<LD>1
+Z80 !s100 V:BRmL27;OWP?K2n8W:lC2
 R6
 32
-R65
+R7
 !i10b 1
 R8
 R9
@@ -465,19 +465,19 @@ R10
 !i113 1
 R11
 Elessthan
-R38
+R40
 R1
 R2
 R3
-Z80 8lessThan.vhd
-Z81 FlessThan.vhd
+Z81 8./mips_logic/lessThan.vhd
+Z82 F./mips_logic/lessThan.vhd
 l0
 L4
 V`7B]^Vc[<>S;^i5kQUcIi1
 !s100 k^Vfz^SDm_<UR1SWIL]P32
 R6
 32
-R65
+R7
 !i10b 1
 R8
 R9
@@ -487,14 +487,14 @@ R11
 Aarch_1
 R1
 R2
-Z82 DEx4 work 8 lessthan 0 22 `7B]^Vc[<>S;^i5kQUcIi1
+Z83 DEx4 work 8 lessthan 0 22 `7B]^Vc[<>S;^i5kQUcIi1
 l11
 L10
-Z83 VRn75QYz]5do8CT?Le2P0Y0
-Z84 !s100 m<nU]`mB[zV^]KIZ[1GIz0
+Z84 VRn75QYz]5do8CT?Le2P0Y0
+Z85 !s100 m<nU]`mB[zV^]KIZ[1GIz0
 R6
 32
-R65
+R7
 !i10b 1
 R8
 R9
@@ -502,19 +502,19 @@ R10
 !i113 1
 R11
 Emips
-Z85 w1594408976
+Z86 w1597159058
 R1
 R2
 R3
-Z86 8mips.vhd
-Z87 Fmips.vhd
+Z87 8./mips_logic/mips.vhd
+Z88 F./mips_logic/mips.vhd
 l0
 L4
-VJETMJ1F]=3XWHEl1E;_@g3
-!s100 NmoC<78gk4F8=E^?ZmoiL1
+V?gB;ED>f]3O5VXiN<X7<z1
+!s100 P7=H[@5mkYDKEPGlInCA?2
 R6
 32
-R65
+R7
 !i10b 1
 R8
 R9
@@ -524,14 +524,51 @@ R11
 Aarch_1
 R1
 R2
-Z88 DEx4 work 4 mips 0 22 JETMJ1F]=3XWHEl1E;_@g3
-l203
-L7
-Z89 Vh1n>02zJ9@hT:e<;=eoMb1
-Z90 !s100 E9AMfH;CDMHjd7[[:[dAk1
+Z89 DEx4 work 4 mips 0 22 ?gB;ED>f]3O5VXiN<X7<z1
+l194
+L11
+Z90 V2U15GPPLe3RVo0:mDV:WU2
+Z91 !s100 GJddFBNB<IVz;Bj@8^5h:2
 R6
 32
-R65
+Z92 !s110 1597165476
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+Emips_tb
+Z93 w1597165466
+R1
+R2
+R3
+Z94 8mips_tb.vhd
+Z95 Fmips_tb.vhd
+l0
+L4
+VVk^1UXC_LR73kiM4z<Hk^3
+!s100 8GEa?48A<0ZL6zDa6BY`n0
+R6
+32
+Z96 !s110 1597165474
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+Aarch_1
+R1
+R2
+Z97 DEx4 work 7 mips_tb 0 22 Vk^1UXC_LR73kiM4z<Hk^3
+l24
+L7
+VnIkY?^he5J0fLcQC9:H@=2
+!s100 ?zziefgWA<U5[NoR10U541
+R6
+32
+R96
 !i10b 1
 R8
 R9
@@ -539,19 +576,19 @@ R10
 !i113 1
 R11
 Emux2_1_32bits
-R38
+R40
 R1
 R2
 R3
-Z91 8mux2_1_32Bits.vhd
-Z92 Fmux2_1_32Bits.vhd
+Z98 8./mips_logic/mux2_1_32Bits.vhd
+Z99 F./mips_logic/mux2_1_32Bits.vhd
 l0
 L4
 VELY<[S3365Z?f]J8GVCO;0
 !s100 UmD]Jf4k=S66MH:HCM2WG2
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -561,14 +598,14 @@ R11
 Aseletor
 R1
 R2
-Z93 DEx4 work 13 mux2_1_32bits 0 22 ELY<[S3365Z?f]J8GVCO;0
+Z100 DEx4 work 13 mux2_1_32bits 0 22 ELY<[S3365Z?f]J8GVCO;0
 l11
 L10
-Z94 VEk_z2IO@?FEMaO<3``;DS3
-Z95 !s100 zXjWYmP^n34X_;`HRTMao0
+Z101 VEk_z2IO@?FEMaO<3``;DS3
+Z102 !s100 zXjWYmP^n34X_;`HRTMao0
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -576,19 +613,19 @@ R10
 !i113 1
 R11
 Eor_32b
-R38
+R40
 R1
 R2
 R3
-Z96 8or_32b.vhd
-Z97 For_32b.vhd
+Z103 8./mips_logic/or_32b.vhd
+Z104 F./mips_logic/or_32b.vhd
 l0
 L4
 ViL]c799Q=kf4g=h;9>LM91
 !s100 Fni<;Rfj;nJYBhiD`S=B33
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -598,14 +635,14 @@ R11
 Aarch_1
 R1
 R2
-Z98 DEx4 work 6 or_32b 0 22 iL]c799Q=kf4g=h;9>LM91
+Z105 DEx4 work 6 or_32b 0 22 iL]c799Q=kf4g=h;9>LM91
 l11
 L10
-Z99 VTfWz:[]BiID5Um2_gWohG3
-Z100 !s100 OOce9gLT[IYC3UW3:MgJz3
+Z106 VTfWz:[]BiID5Um2_gWohG3
+Z107 !s100 OOce9gLT[IYC3UW3:MgJz3
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -613,19 +650,19 @@ R10
 !i113 1
 R11
 Ereg
-Z101 w1594389054
+Z108 w1594389054
 R1
 R2
 R3
-Z102 8reg.vhd
-Z103 Freg.vhd
+Z109 8./mips_logic/reg.vhd
+Z110 F./mips_logic/reg.vhd
 l0
 L4
 VW09D[^zFT8mBhAIFD6XS=3
 !s100 ?hiLM:FO1NR7UbT;mjEZi0
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -635,14 +672,14 @@ R11
 Aarch_1
 R1
 R2
-Z104 DEx4 work 3 reg 0 22 W09D[^zFT8mBhAIFD6XS=3
+Z111 DEx4 work 3 reg 0 22 W09D[^zFT8mBhAIFD6XS=3
 l11
 L10
-Z105 VC05PFXo_lYB@S8;`oX`SO2
-Z106 !s100 jmN]@9DjVJ:XfL0X@G]fa3
+Z112 VC05PFXo_lYB@S8;`oX`SO2
+Z113 !s100 jmN]@9DjVJ:XfL0X@G]fa3
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -650,20 +687,20 @@ R10
 !i113 1
 R11
 Ereg_bank
-Z107 w1594409797
+Z114 w1594409797
 R16
 R1
 R2
 R3
-Z108 8reg_bank.vhd
-Z109 Freg_bank.vhd
+Z115 8./mips_logic/reg_bank.vhd
+Z116 F./mips_logic/reg_bank.vhd
 l0
 L5
 V``cJiQBIh7bdD=B6Z:j`;1
 !s100 l?c:bOBDA76miB:[G^@T>1
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -674,14 +711,14 @@ Aarch_1
 R16
 R1
 R2
-Z110 DEx4 work 8 reg_bank 0 22 ``cJiQBIh7bdD=B6Z:j`;1
+Z117 DEx4 work 8 reg_bank 0 22 ``cJiQBIh7bdD=B6Z:j`;1
 l21
 L16
-Z111 VfoZo7G[JUEkidb?k[NA[^1
-Z112 !s100 _D8Rc]DQ^zhl3SWLAXcJE2
+Z118 VfoZo7G[JUEkidb?k[NA[^1
+Z119 !s100 _D8Rc]DQ^zhl3SWLAXcJE2
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -689,19 +726,19 @@ R10
 !i113 1
 R11
 Eseletor3_1_32bits
-Z113 w1594385389
+Z120 w1594385389
 R1
 R2
 R3
-Z114 8seletro3_1_32bits.vhd
-Z115 Fseletro3_1_32bits.vhd
+Z121 8./mips_logic/seletro3_1_32bits.vhd
+Z122 F./mips_logic/seletro3_1_32bits.vhd
 l0
 L4
 VnY<WddHhDKh726V]BW<oh0
 !s100 ddVKFWfQBjeQF4WNZShZY2
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -711,14 +748,14 @@ R11
 Aarch_1
 R1
 R2
-Z116 DEx4 work 17 seletor3_1_32bits 0 22 nY<WddHhDKh726V]BW<oh0
+Z123 DEx4 work 17 seletor3_1_32bits 0 22 nY<WddHhDKh726V]BW<oh0
 l11
 L10
-Z117 VSbFJA`<3Y;Iz]_37IH^T<2
-Z118 !s100 JDjcULRleiNlVACn;b7kI2
+Z124 VSbFJA`<3Y;Iz]_37IH^T<2
+Z125 !s100 JDjcULRleiNlVACn;b7kI2
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -726,19 +763,19 @@ R10
 !i113 1
 R11
 Eseletor3_1_5bit
-Z119 w1594385369
+Z126 w1594385369
 R1
 R2
 R3
-Z120 8seletor3_1_5bit.vhd
-Z121 Fseletor3_1_5bit.vhd
+Z127 8./mips_logic/seletor3_1_5bit.vhd
+Z128 F./mips_logic/seletor3_1_5bit.vhd
 l0
 L4
 VC8Wh`gJE4>QS;GP^Wfc4@3
 !s100 <Z2h7mjhUdMV[D3[;YCXJ1
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -748,14 +785,14 @@ R11
 Aarch_1
 R1
 R2
-Z122 DEx4 work 15 seletor3_1_5bit 0 22 C8Wh`gJE4>QS;GP^Wfc4@3
+Z129 DEx4 work 15 seletor3_1_5bit 0 22 C8Wh`gJE4>QS;GP^Wfc4@3
 l11
 L10
-Z123 VoK7Df3kZB7_zQcNZbIUbi1
-Z124 !s100 RRJjld<Al41CSj_BHzJf43
+Z130 VoK7Df3kZB7_zQcNZbIUbi1
+Z131 !s100 RRJjld<Al41CSj_BHzJf43
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -763,19 +800,19 @@ R10
 !i113 1
 R11
 Eseletor_5bit
-R38
+R40
 R1
 R2
 R3
-Z125 8seletor_5bit.vhd
-Z126 Fseletor_5bit.vhd
+Z132 8./mips_logic/seletor_5bit.vhd
+Z133 F./mips_logic/seletor_5bit.vhd
 l0
 L4
 V^jEA]In[=fmUhWFY^7<3Q3
 !s100 4bg=^_L9`;Y=Hk<8Zj[0_3
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -785,14 +822,14 @@ R11
 Aarch_1
 R1
 R2
-Z127 DEx4 work 12 seletor_5bit 0 22 ^jEA]In[=fmUhWFY^7<3Q3
+Z134 DEx4 work 12 seletor_5bit 0 22 ^jEA]In[=fmUhWFY^7<3Q3
 l12
 L11
-Z128 VYH`hB63TDKT0H67B[CTW^3
-Z129 !s100 j]^J5e4mc;CBB<NR`k_[93
+Z135 VYH`hB63TDKT0H67B[CTW^3
+Z136 !s100 j]^J5e4mc;CBB<NR`k_[93
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -800,20 +837,20 @@ R10
 !i113 1
 R11
 Esomador
-Z130 w1592769420
+Z137 w1592769420
 R16
 R1
 R2
 R3
-Z131 8somador.vhd
-Z132 Fsomador.vhd
+Z138 8./mips_logic/somador.vhd
+Z139 F./mips_logic/somador.vhd
 l0
 L5
 VYTR_6[7TJ_9=Nf]ST1BUW0
 !s100 bJEgP0ni3gmWG7L2ObN6`3
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -824,14 +861,14 @@ Asoma
 R16
 R1
 R2
-Z133 DEx4 work 7 somador 0 22 YTR_6[7TJ_9=Nf]ST1BUW0
+Z140 DEx4 work 7 somador 0 22 YTR_6[7TJ_9=Nf]ST1BUW0
 l14
 L12
-Z134 VRhczccS1e2eaAil`KW09K1
-Z135 !s100 h4:Mh2DKzVN[mnk^c_Nkd3
+Z141 VRhczccS1e2eaAil`KW09K1
+Z142 !s100 h4:Mh2DKzVN[mnk^c_Nkd3
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -839,20 +876,20 @@ R10
 !i113 1
 R11
 Esomador_signed
-Z136 w1592672653
+Z143 w1592672653
 R16
 R1
 R2
 R3
-Z137 8somador_signed.vhd
-Z138 Fsomador_signed.vhd
+Z144 8./mips_logic/somador_signed.vhd
+Z145 F./mips_logic/somador_signed.vhd
 l0
 L5
 V3?XaF4XM>cV_E838Czook1
 !s100 CGh2[e;NNia8oAnkSb^gY1
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -863,14 +900,14 @@ Aarch_1
 R16
 R1
 R2
-Z139 DEx4 work 14 somador_signed 0 22 3?XaF4XM>cV_E838Czook1
+Z146 DEx4 work 14 somador_signed 0 22 3?XaF4XM>cV_E838Czook1
 l13
 L11
-Z140 Vod4D4Kn6K1`2X0G_Qo;T?0
-Z141 !s100 ]90KNhD?QaQl;dXMm1M0^3
+Z147 Vod4D4Kn6K1`2X0G_Qo;T?0
+Z148 !s100 ]90KNhD?QaQl;dXMm1M0^3
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -878,20 +915,20 @@ R10
 !i113 1
 R11
 Esubtrator
-Z142 w1592586348
+Z149 w1592586348
 R16
 R1
 R2
 R3
-Z143 8subtrator.vhd
-Z144 Fsubtrator.vhd
+Z150 8./mips_logic/subtrator.vhd
+Z151 F./mips_logic/subtrator.vhd
 l0
 L4
 V[L92G:hPU4X7D0_Yz2eE11
 !s100 ]3mU_o4BSjg[ND4ONgF6l3
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -902,14 +939,14 @@ Aarch_1
 R16
 R1
 R2
-Z145 DEx4 work 9 subtrator 0 22 [L92G:hPU4X7D0_Yz2eE11
+Z152 DEx4 work 9 subtrator 0 22 [L92G:hPU4X7D0_Yz2eE11
 l13
 L11
-Z146 V<O0;g^MdgEJ8ESnY;G4e_1
-Z147 !s100 X]J1D@083JaN5>mf;`WBZ3
+Z153 V<O0;g^MdgEJ8ESnY;G4e_1
+Z154 !s100 X]J1D@083JaN5>mf;`WBZ3
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -917,20 +954,20 @@ R10
 !i113 1
 R11
 Eual
-Z148 w1594404759
+Z155 w1594404759
 R16
 R1
 R2
 R3
-Z149 8ual.vhd
-Z150 Fual.vhd
+Z156 8./mips_logic/ual.vhd
+Z157 F./mips_logic/ual.vhd
 l0
 L5
 V[R9XOCd]]Q?RHAc?ZCf:63
 !s100 VGD0453?NOYE6Q4N:K8a63
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -941,14 +978,14 @@ Aarch_1
 R16
 R1
 R2
-Z151 DEx4 work 3 ual 0 22 [R9XOCd]]Q?RHAc?ZCf:63
+Z158 DEx4 work 3 ual 0 22 [R9XOCd]]Q?RHAc?ZCf:63
 l47
 L13
-Z152 VFg:0eMZWoA4>Uk5jHVVPT3
-Z153 !s100 ;4@?485lC2lbXLYOObMAM2
+Z159 VFg:0eMZWoA4>Uk5jHVVPT3
+Z160 !s100 ;4@?485lC2lbXLYOObMAM2
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -956,19 +993,19 @@ R10
 !i113 1
 R11
 Eual_ctrl
-Z154 w1594400861
+Z161 w1594400861
 R1
 R2
 R3
-Z155 8ual_ctrl.vhd
-Z156 Fual_ctrl.vhd
+Z162 8./mips_logic/ual_ctrl.vhd
+Z163 F./mips_logic/ual_ctrl.vhd
 l0
 L4
 Vf8Ged6Bj626;R^9HX[dQ21
 !s100 mzQnGJzOA0QcPb9_`5nN51
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9
@@ -978,14 +1015,14 @@ R11
 Aarch_1
 R1
 R2
-Z157 DEx4 work 8 ual_ctrl 0 22 f8Ged6Bj626;R^9HX[dQ21
+Z164 DEx4 work 8 ual_ctrl 0 22 f8Ged6Bj626;R^9HX[dQ21
 l11
 L10
-Z158 Vl>SIiAf8B_FT2`kghj>7d3
-Z159 !s100 iDC3[oACgGTm]1YgEO<=h1
+Z165 Vl>SIiAf8B_FT2`kghj>7d3
+Z166 !s100 iDC3[oACgGTm]1YgEO<=h1
 R6
 32
-R65
+R92
 !i10b 1
 R8
 R9

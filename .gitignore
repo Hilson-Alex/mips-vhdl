@@ -1,5 +1,6 @@
 mips/*
 !*.vhd
+!mips/mips_logic
+!mips/mips_instructions
 !mips.qpf
-!mips/db
 !mips/work

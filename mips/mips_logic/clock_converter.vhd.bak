@@ -1,0 +1,36 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+entity clock_converter is
+	port(	i_CLK	: in std_logic;
+			o_CLK	: out std_logic);
+			
+end clock_converter;
+
+architecture arch_1 of clock_converter is
+
+	attribute chip_pin : string;
+	attribute chip_pin of o_CLK : signal is "V16";
+	attribute chip_pin of i_CLK : signal is "AF14";
+
+	signal w_COUNT : integer :=1;
+	signal w_CARRY	: std_logic :='0';
+
+begin
+
+process (i_CLK) 
+begin
+	if rising_edge(i_CLK) then
+		w_COUNT <= w_COUNT + 1;
+		if (w_COUNT = 25000000) then
+			w_CARRY <= not w_CARRY;
+			w_COUNT <= 1;
+		end if;	
+	end if;
+end process;
+
+o_CLK <= w_CARRY;
+
+end arch_1;

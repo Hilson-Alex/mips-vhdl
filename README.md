@@ -170,7 +170,7 @@ int main(){
 |    $fp    |   $30    |       frame pointer       |        yes        |
 |    $ra    |   $31    | return adress (functions) |        yes        |
 
-> * You shold not use these registers for instructions.
+> \* You shold not use these registers for instructions.
 
 > **Preserved on call** refers for which registers you shold store the value in case of use them in a function
 

@@ -6,7 +6,7 @@ end mips_tb;
 
 architecture arch_1 of mips_tb is
 
-	component inst2 is
+	component inst4 is
 		port(	addr : in std_logic_vector(31 downto 0);
 				ins  : out std_logic_vector(31 downto 0));
 	end component;
@@ -28,7 +28,7 @@ begin
 					i_inst => w_inst,
 					o_addr => w_addr);
   
-	u_inst : inst2
+	u_inst : inst4
 		port map(addr => w_addr,
                ins  => w_inst);
 

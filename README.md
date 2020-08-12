@@ -14,7 +14,7 @@ Note that our start instruction is 0x00400000, so this may be handled in your In
   
 ## Deployment Observations
 
-This Mips is not completely implemented. *save word* (sw) and *load word* (lw) are working, but lui and ori aren't implemented yet, so you need an predefined index to use sw and lw. We let $t0 with default value 0x10010000 to do that. 
+This Mips is not completely implemented. *save word* (sw) and *load word* (lw) are working, but lui and ori aren't implemented yet, so you need an predefined index to use sw and lw. We used the $sp register to test those instructions. 
 
 ### Currently implemented instructions:
 
@@ -135,11 +135,11 @@ The fourth file tests the sw (save word) and lw (load word) commands.
 
 -  mipsasm code:
 ``` assembly
-.text
+.text 
 
-addi $s0, $zero, 5
-sw $s0, 0($t0)
-lw $s1, 0($t0)
+	addi $s0, $zero, 5
+	sw $s0, 0($sp)
+	lw $s1, 0($sp)
 ```
 - C code:
 ``` C
